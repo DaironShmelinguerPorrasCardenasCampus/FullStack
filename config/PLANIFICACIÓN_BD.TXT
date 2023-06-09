@@ -1,0 +1,64 @@
+Rol
+id_rol PK
+nombre_rol
+
+//CREAR LOS ROLES Y ESTABLECERLOS EN BD
+
+USUARIOS
+id_Rol FK
+Id_user PK
+email
+username
+Password
+
+
+CLIENTES
+Id_cliente PK
+Nombre_cliente
+Telefono_cliente
+ciudad_cliente
+
+
+
+EMPLEADOS
+Id_empleado PK
+Nombre_empleado
+Celular_empleado
+Direccion_empleado
+
+
+
+COTIZACIÓN
+Id_cotizacion PK
+Id_cliente FK
+Id_empleado FK
+fecha_cotizacion
+Hora_cotización
+
+
+
+
+COTIZACIÓN_DETALLE
+id_detalle PK
+id_producto_det FK
+id_cotización_det FK
+Cantidad_producto
+precio_venta
+Cantidad_dias
+
+
+PRODUCTOS
+id_producto PK
+Nombre_producto
+precio_unitario
+stock
+unidades_pedidas
+ciudad_envio
+
+
+
+
+
+
+
+
